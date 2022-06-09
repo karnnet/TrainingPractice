@@ -8,7 +8,6 @@ if (a < b) {
     console.log("a is equal to b");
 }
 
-
 const time = new Date().getHours();
 if (time < 4) {
     console.log("good afternoon");
@@ -16,4 +15,16 @@ if (time < 4) {
     console.log("good evening")
 } else {
     console.log("good night");
+}
+
+
+
+var a = 30;
+var b = 30;
+if (a < b) {
+    console.log('a is less');
+} else if (a > b) {
+    console.log('a is greater');
+} else if (a = b) {
+    console.log('a is equal to b');
 }
