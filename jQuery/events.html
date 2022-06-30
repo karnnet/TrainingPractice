@@ -29,9 +29,9 @@
     <button class="btn">click me</button>
 
     <script>
-        $('.btn').click(function() {
-            ('p.first').hide(); //click event
-        });
+        // $('.btn').click(function() {
+        //     ('p.first').hide(); //click event
+        // });
         // $('p').dblclick(function() {
         //     $('p.second').hide(); //double click event
         // });
@@ -53,6 +53,27 @@
         // $('p').on("dblclick", (function() {
         //     $('p.eighth').css("background-color", "green");
         // })); // statement with css style
+
+        $('.btn').on('click', function() {
+            console.log('clicked');
+            $('p.first').css('background-color', 'pink');
+        });
+        $('.btn').on('mousedown', function() {
+            console.log('mousedown');
+            $('p.second').css('background-color', 'green');
+        });
+        $('.btn').on('mouseup', function() {
+            console.log('mouseup');
+            $('p.third').css('background-color', 'grey');
+        });
+        $('.btn').on('mouseenter', function() {
+            console.log('mouseenter');
+            $('p.fourth').css('background-color', 'yellow');
+        });
+        $('.btn').on('mouseleave', function() {
+            console.log('mouseleave');
+            $('p.fifth').css('background-color', 'blue');
+        });
     </script>
 </body>
 
