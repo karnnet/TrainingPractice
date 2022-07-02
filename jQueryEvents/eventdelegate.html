@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>delegate</title>
+</head>
+
+<body>
+    <div style="background-color:yellow">
+        <p>This is a paragraph.</p>
+        <p>Click any p element to make it disappear. Including this one.</p>
+        <button>Insert a new p element after this button</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(() => {
+            $("div").delegate("p", "click", function() {
+                $(this).slideToggle();
+            });
+            $("button").click(function() {
+                $("<p>This is a new paragraph.</p>").insertAfter("button");
+            });
+        });
+    </script>
+</body>
+
+</html>
