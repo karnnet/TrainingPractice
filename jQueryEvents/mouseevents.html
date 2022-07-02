@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="first">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit placeat quam dignissimos, fugit, corporis totam numquam velit, sequi illo libero minima deserunt repellendus quod nostrum. In itaque ipsam laborum eius.
+    </p>
+    <p class="second">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit placeat quam dignissimos, fugit, corporis totam numquam velit, sequi illo libero minima deserunt repellendus quod nostrum. In itaque ipsam laborum eius.
+    </p>
+    <p class="third">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit placeat quam dignissimos, fugit, corporis totam numquam velit, sequi illo libero minima deserunt repellendus quod nostrum. In itaque ipsam laborum eius.
+    </p>
+    <p class="fourth">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit placeat quam dignissimos, fugit, corporis totam numquam velit, sequi illo libero minima deserunt repellendus quod nostrum. In itaque ipsam laborum eius.
+    </p>
+    <p class="fifth">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit placeat quam dignissimos, fugit, corporis totam numquam velit, sequi illo libero minima deserunt repellendus quod nostrum. In itaque ipsam laborum eius.
+    </p>
+    <p class="sixth">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit placeat quam dignissimos, fugit, corporis totam numquam velit, sequi illo libero minima deserunt repellendus quod nostrum. In itaque ipsam laborum eius.
+    </p>
+    <p class="seventh">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit placeat quam dignissimos, fugit, corporis totam numquam velit, sequi illo libero minima deserunt repellendus quod nostrum. In itaque ipsam laborum eius.
+    </p>
+    <p class="eighth">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit placeat quam dignissimos, fugit, corporis totam numquam velit, sequi illo libero minima deserunt repellendus quod nostrum. In itaque ipsam laborum eius.
+    </p>
+    <button class="btn">click me</button>
+
+    <script>
+        // $('.btn').click(function() {
+        //     ('p.first').hide(); //click event
+        // });
+        // $('p').dblclick(function() {
+        //     $('p.second').hide(); //double click event
+        // });
+        // $('p').mouseenter(function() {
+        //     $('p.third').hide(); // mouse enter event
+        // });
+        // $('p').mouseenter(function() {
+        //     $('p.fourth').toggle(); //mouse enter toggle event
+        // });
+        // $('p').mouseleave(function() {
+        //     $('p.fifth').toggle(); //mouse leave event
+        // });
+        // $('p').mousedown(function() {
+        //     $('p.sixth').toggle(); //mousedown event
+        // });
+        // $('p').click(function() {
+        //     $('p.seventh').css("background-color", "blue");
+        // }); // statement with css style
+        // $('p').on("dblclick", (function() {
+        //     $('p.eighth').css("background-color", "green");
+        // })); // statement with css style
+
+        $('.btn').on('click', function() {
+            console.log('clicked');
+            $('p.first').css('background-color', 'pink');
+        });
+        $('.btn').on('mousedown', function() {
+            console.log('mousedown');
+            $('p.second').css('background-color', 'green');
+        });
+        $('.btn').on('mouseup', function() {
+            console.log('mouseup');
+            $('p.third').css('background-color', 'grey');
+        });
+        $('.btn').on('mouseenter', function() {
+            console.log('mouseenter');
+            $('p.fourth').css('background-color', 'yellow');
+        });
+        $('.btn').on('mouseleave', function() {
+            console.log('mouseleave');
+            $('p.fifth').css('background-color', 'blue');
+        });
+    </script>
+</body>
+
+</html>
