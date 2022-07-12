@@ -23,6 +23,7 @@ $(() => {
         $.get('https://jsonplaceholder.typicode.com/posts/' + data[2].id).then(function(response) {
             console.log(response);
         });
+
     });
 
 });
