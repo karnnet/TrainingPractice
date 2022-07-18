@@ -32,5 +32,5 @@ var Audi = /** @class */ (function (_super) {
     };
     return Audi;
 }(Car));
-var obj = new Audi(" Black", 8500000);
+var obj = new Audi(" Black", 85000);
 obj.display();
