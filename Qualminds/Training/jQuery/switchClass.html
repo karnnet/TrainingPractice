@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>jQuery UI Switch Class Example</title>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <!-- CSS -->
+    <style>
+        .LargeClass {
+            font-family: NewTimesRoman;
+            font-size: large;
+            font-weight: bold;
+            color: Red;
+        }
+        
+        .NormalClass {
+            font-family: Arial;
+            font-size: small;
+            font-weight: bold;
+            color: Blue;
+        }
+    </style>
+    <script>
+        $(function() {
+            $('#btnSwitch').click(function() {
+                $(".NormalClass").switchClass("NormalClass", "LargeClass", 'fast');
+                $(".LargeClass").switchClass("LargeClass", "NormalClass", 'fast');
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="NormalClass">
+        JavaTpoint is commited to provide easy and point to point learning of various tutorials.
+    </div>
+    <br />
+    <input type="button" id="btnSwitch" value="Switch Class" />
+</body>
+
+</html>

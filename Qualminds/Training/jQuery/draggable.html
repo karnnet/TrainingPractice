@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <style>
+        #draggable {
+            width: 100px;
+            height: 100px;
+            padding: 0.5em;
+            background: #7fffd4;
+        }
+    </style>
+    <script>
+        $(function() {
+            $(".ui-widget-content span").draggable({
+                axis: "y"
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div id="draggable" class="ui-widget-content"><span>drag me</span>
+    </div>
+</body>
+
+</html>

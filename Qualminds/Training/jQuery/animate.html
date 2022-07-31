@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>jQuery UI addClass Example</title>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <style>
+        .elemClass {
+            width: 200px;
+            height: 50px;
+            background-color: #b9cd6d;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#button-1').click(function() {
+                $('#animTarget').animate({
+                    backgroundColor: "red",
+                    color: "black",
+                    borderTopColor: "green",
+                    borderBottomColor: "blue",
+                    borderLeftColor: "black"
+
+                })
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div id=animTarget class="elemClass">
+        Hello JavaTpoint </div>
+    <button id="button-1">Click Me</button>
+</body>
+
+</html>

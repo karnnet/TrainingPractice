@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>jQuery UI Toggle Example</title>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <!-- CSS -->
+    <style>
+        .toggler {
+            width: 500px;
+            height: 200px;
+        }
+        
+        #button {
+            padding: .5em 1em;
+            text-decoration: none;
+        }
+        
+        #effect {
+            width: 240px;
+            height: 155px;
+            padding: 0.4em;
+            position: relative;
+        }
+        
+        #effect h3 {
+            margin: 0;
+            padding: 0.4em;
+            text-align: center;
+        }
+    </style>
+    <script>
+        $(function() {
+            // run the currently selected effect  
+            function runEffect() {
+                // run the effect  
+                $("#effect").toggle('explode', 300);
+            };
+            //callback function to bring a hidden box back  
+
+            $("#button").click(function() {
+                runEffect();
+                return false;
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="toggler">
+        <div id="effect" class="ui-widget-content ui-corner-all">
+            <h3 class="ui-widget-header ui-corner-all">Show</h3>
+            <p>
+                JavaTpoint provides easy and point to point learning .
+            </p>
+        </div>
+    </div>
+    <a href="#" id="button" class="ui-state-default ui-corner-all">Show method with Shake effect</a>
+</body>
+
+</html>
